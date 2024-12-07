@@ -17,6 +17,20 @@ export default function Navbar() {
           Home
         </NavLink>
         <NavLink 
+          to="/projects" 
+          className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+        >
+          <img src="/icons/instance-line.svg" alt="" className="nav-icon" />
+          Projects
+        </NavLink>
+        <NavLink 
+          to="/features" 
+          className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+        >
+          <img src="/icons/box-2-fill.svg" alt="" className="nav-icon" />
+          Features
+        </NavLink>
+        <NavLink 
           to="/about" 
           className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
         >
@@ -34,7 +48,7 @@ export default function Navbar() {
         <a href="https://docs.google.com/document/d/1IXSPeeWzdQOGPxRNA1LVZF2PR7a-5xvlymQfJBaZaFc/edit?tab=t.0" target="_blank" rel="noopener noreferrer" className="social-link">
           <img src="/icons/article-fill.svg" alt="Resume" className="social-icon" />
         </a>
-        <a href="https://www.edwsng.com/" className="social-link" title="More Links">
+        <a href="https://www.edwsng.com/" target="_blank" rel="noopener noreferrer" className="social-link" title="More Links">
           <img src="/icons/share-box-line.svg" alt="More Links" className="social-icon" />
         </a>
       </div>
